@@ -1,0 +1,9 @@
+On vous donne la fonction qui permet d’écrire une chaine de caractère quelconque sur la fenêtre :
+void Ecrire_chaine(char *s,int x,int y)
+	{
+	int longueur=strlen(s),i;
+	glRasterPos2i(x,y);
+	for(i=0;i<longueur;i++)	
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12,s[i]);
+		
+	}
